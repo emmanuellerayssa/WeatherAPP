@@ -47,10 +47,12 @@ body{
     color: white;
     font-size: larger;
 }
+
 .search::placeholder {
     color: white;
     font-size: medium;
 }
+
 /* Remove focus outline */
 .search:focus {
     outline: none;
@@ -62,6 +64,8 @@ body{
 }
 
 #searchicon{
+    background-color: transparent;
+    border: none;
     cursor: pointer;
     transition: all linear 300ms;
 }
