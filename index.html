@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet and Font Awesome icons -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aaf00f280.js" crossorigin="anonymous"></script>
+    <title>Weather</title>
+</head>
+<body>
+    <!-- Main weather container -->
+    <div class="container">
+        <!-- Search bar -->
+        <div class="searchbar">
+            <input type="search" class="search">
+            <i id="searchicon" class="fa-brands fa-sistrix fa-xl" style="color: white;"></i>
+        </div>
+        <!-- Date display -->
+        <h4 class="date"></h4>
+        <!-- Location info -->
+        <div class="location">
+            <h1 class="city"></h1>
+            <h5 class="country"></h5>
+        </div>
+        <!-- Weather icon -->
+        <img src="https://openweathermap.org/img/wn/04d.png" alt="weathericon" id="icon">
+        <!-- Weather description -->
+        <h4 class="weather"></h4>
+        <!-- Main temperature -->
+        <h1 class="maintemp"></h1>
+        <!-- High and low temperatures -->
+        <div class="othertemp">
+            <h4>HIGHS</h4>
+            <h4>LOWS</h4>
+            <h3 id="hightemp"></h3>
+            <h3 id="lowtemp"></h3>
+        </div>
+    </div>
+    
+    <!-- Main JavaScript file -->
+    <script src="app.js"></script>
+
+</body>
+</html>

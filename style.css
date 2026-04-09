@@ -1,0 +1,106 @@
+/* Global reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgb(245, 179, 199), rgb(240, 229, 212));
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* Main container */
+.container{
+    background-color: palevioletred;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 350px;
+    max-width: 90%;
+    padding: 2rem 3rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Search bar */
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search input */
+.search{
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: larger;
+}
+
+/* Remove focus outline */
+.search:focus {
+    outline: none;
+}
+
+/* Make clear button white */
+.search::-webkit-search-cancel-button {
+    filter: brightness(0) invert(1);
+}
+
+#searchicon{
+    cursor: pointer;
+    transition: all linear 300ms;
+}
+
+#searchicon:hover{
+    opacity: 0.8;
+    padding-left: 0.3rem;
+}
+
+/* Location section */
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Weather icon */
+img{
+    width: 75px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Weather description */
+.weather{
+    margin-top: -1.5rem;
+    text-transform: capitalize;
+}
+
+/* High and low temperatures grid */
+.othertemp{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
+    align-items: center;
+    justify-items:center;
+    row-gap: 0.3rem;
+}
+
+.othertemp h4{
+    font-weight:bold;
+    font-size: small;
+    text-transform: uppercase;
+}
