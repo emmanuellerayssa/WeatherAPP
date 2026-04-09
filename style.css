@@ -47,7 +47,10 @@ body{
     color: white;
     font-size: larger;
 }
-
+.search::placeholder {
+    color: white;
+    font-size: medium;
+}
 /* Remove focus outline */
 .search:focus {
     outline: none;
